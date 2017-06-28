@@ -1,0 +1,37 @@
+
+<form method="post" action="buscaObservacion" >
+  
+<div class="container">
+<table>
+    <tr>
+      <td colspan="3"><p><%= observacion %></p></td>
+    </tr>
+   <tr>
+       <td>Tipo Reclamo</td>
+       <td>Observacion</td>
+       <td>fecha</td>
+    </tr>
+     for(var i=0; i< reclamos.length; i++) {
+    if(reclamos[i].observacion == observacion){ %>
+       <tr>
+           <td><%= reclamos[i].tipoReclamo %></td>
+           <td><%= reclamos[i].observacion %></td>
+            <td><%= reclamos[i].observacion %></td>
+        </tr>
+  <% }}%>
+  </table>
+
+
+<h3> Bien benido a<%= title%></h3>
+	<form action="" method="post">
+  <lavels> pon la observacion a buscar
+  <input class="button_1" type="submit" name="search" value="Buscar">
+  < input tipe="text" name="search" row ="2" cols='80' 'observacion']>
+</form>
+     <div class="container">
+
+      </div>
+      <footer class="main" id="f1">
+        <a href="">inicio</a>
+      </footer>
+</from>

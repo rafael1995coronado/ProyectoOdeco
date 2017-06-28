@@ -1,0 +1,17 @@
+   <div class="container">
+			<table border="1"> la tabla de reclamos <span  class="required"></span></label>
+     	  <tr>
+          <td>Tipo de Reclamo </td>
+       		<td>Observaciones </td>
+       		<td>Fecha </td>
+      	</tr>
+       <% 
+       for(var i=0;i<reclamo.length; i++) {%>  
+      	<tr>
+          <td><%= reclamo[i].tipoReclamo %></td>
+        	<td><%= reclamo[i].observacion %></td>
+        	<td><%= reclamo[i].fecha %></td>
+    	</tr>
+      <%}%>
+  </table>
+  </div>

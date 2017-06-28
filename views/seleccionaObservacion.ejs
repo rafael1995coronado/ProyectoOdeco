@@ -1,0 +1,20 @@
+<div class="container">
+  <table>
+  <tr>
+      <td colspan="3"><p><%= observacionBuca %></p></td>
+    </tr>
+    <tr>
+       <td>Tipo Reclamo</td>
+       <td>Observacion</td>
+       <td>Fecha</td>
+    </tr>
+for(var i=0; i< reclamos.length; i++) {
+    if(reclamos[i].fecha == observacionBuca){ %>
+       <tr>
+           <td><%= reclamos[i].tipoReclamo %></td>
+           <td><%= reclamos[i].observacion %></td>
+        </tr>
+  <% }}%>
+  </table>
+</div>
+
